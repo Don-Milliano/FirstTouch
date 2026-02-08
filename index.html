@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>First Touch Youth Fitness | Kids Football Strength, Speed & Agility | Folkestone</title>
+  <meta name="description" content="Football fitness coaching for kids and teens: strength, speed, agility, balance, and confidence. Folkestone (Radnor Park). Group sessions + 1-to-1. Parent-first safeguarding approach." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="First Touch Youth Fitness" />
+  <meta property="og:description" content="Kids football strength, speed & agility coaching in Folkestone. Group sessions + 1-to-1. Parent-first safeguarding." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Simple JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"First Touch Youth Fitness",
+    "description":"Kids football strength, speed & agility coaching. Group sessions and 1-to-1 in Folkestone.",
+    "areaServed":"Folkestone, Kent",
+    "address":{"@type":"PostalAddress","addressLocality":"Folkestone","addressRegion":"Kent","addressCountry":"GB"},
+    "url":"",
+    "sameAs":[]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#0f1722;
+      --panel2:#0c1320;
+      --text:#e9eef6;
+      --muted:#a9b4c3;
+      --line:rgba(233,238,246,.12);
+      --accent:#ffd54a; /* varsity yellow */
+      --accent2:#ffffff;
+      --danger:#ff5a7a;
+      --ok:#6ee7b7;
+      --shadow: 0 12px 35px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(900px 400px at 20% 10%, rgba(255,213,74,.12), transparent 55%),
+        radial-gradient(700px 420px at 85% 0%, rgba(110,231,183,.08), transparent 55%),
+        radial-gradient(900px 600px at 80% 70%, rgba(255,90,122,.06), transparent 60%),
+        var(--bg);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 24px;}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,15,20,.86), rgba(11,15,20,.55));
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding: 14px 24px;
+      max-width:var(--max);
+      margin:0 auto;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; text-decoration:none;
+      min-width: 240px;
+    }
+    .logo{
+      width:40px; height:40px; border-radius:14px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,213,74,.95), rgba(255,213,74,.35) 42%, transparent 55%),
+        linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,0));
+      border:1px solid rgba(255,213,74,.28);
+      box-shadow: 0 10px 20px rgba(0,0,0,.25);
+      position:relative;
+      overflow:hidden;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:-30%;
+      background: conic-gradient(from 220deg, rgba(255,213,74,.0), rgba(255,213,74,.35), rgba(110,231,183,.22), rgba(255,90,122,.18), rgba(255,213,74,.0));
+      filter: blur(18px);
+      transform: rotate(18deg);
+    }
+    .brand h1{
+      font-size:14px; margin:0; letter-spacing:.08em; text-transform:uppercase;
+    }
+    .brand p{
+      margin:0; font-size:12px; color:var(--muted);
+    }
+
+    .links{
+      display:flex; align-items:center; gap: 14px; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .links a{
+      text-decoration:none;
+      font-size:13px;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+    }
+    .links a:hover{
+      color:var(--text);
+      border-color: var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .cta{
+      display:flex; gap:10px; align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 10px 18px rgba(0,0,0,.12);
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{ background: rgba(255,255,255,.07); }
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(255,213,74,.92), rgba(255,213,74,.62));
+      color:#1a1a1a;
+      border-color: rgba(255,213,74,.35);
+    }
+    .btn.primary:hover{
+      filter: brightness(1.04);
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border:1px solid rgba(255,213,74,.28);
+      background: rgba(255,213,74,.08);
+      color: var(--text);
+      font-size: 12px;
+      letter-spacing:.02em;
+    }
+    .grid{
+      display:grid;
+      gap:16px;
+    }
+    .hero{
+      padding: 28px 0 10px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .brand{min-width:auto}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(15,23,34,.92), rgba(12,19,32,.92));
+      border:1px solid var(--line);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .pad{ padding: 20px; }
+    .hero h2{
+      font-size: 40px;
+      line-height:1.05;
+      margin: 10px 0 12px;
+      letter-spacing:-.02em;
+    }
+    .hero h2 span{ color: var(--accent); }
+    .hero p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 62ch;
+    }
+    .heroActions{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;
+    }
+    .stats{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .stat{
+      padding: 14px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .stat b{ display:block; font-size: 20px; margin-bottom: 4px;}
+    .stat span{ color:var(--muted); font-size: 12px;}
+    .rightCard{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height: 100%;
+    }
+    .rightTop{
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,213,74,.12), rgba(255,213,74,0));
+    }
+    .rightTop h3{ margin: 0 0 6px; font-size: 16px;}
+    .rightTop p{ margin:0; color:var(--muted); font-size: 13px;}
+    .rightBody{ padding: 18px; }
+    .list{
+      display:grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style:none;
+    }
+    .li{
+      display:flex; gap:10px;
+      padding: 12px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .dot{
+      width:10px; height:10px; border-radius:999px; margin-top: 6px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(255,213,74,.12);
+      flex:0 0 auto;
+    }
+    .li b{ display:block; font-size: 13px; margin-bottom: 2px;}
+    .li span{ color:var(--muted); font-size: 12px;}
+    .section{
+      padding: 18px 0;
+    }
+    .section h3{
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing:-.01em;
+    }
+    .section p.lead{ margin: 0 0 14px; color:var(--muted); max-width: 80ch; }
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+    }
+    @media (max-width: 900px){
+      .twoCol{ grid-template-columns: 1fr; }
+    }
+    .feature{
+      padding:16px;
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .feature h4{ margin:0 0 6px; font-size: 16px; }
+    .feature p{ margin:0; color:var(--muted); font-size: 13px; }
+
+    .tagRow{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 10px;}
+    .tag{
+      font-size: 12px;
+      color: var(--muted);
+      border:1px solid var(--line);
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .pricing{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:16px;
+    }
+    @media (max-width: 900px){
+      .pricing{ grid-template-columns: 1fr; }
+    }
+    .priceCard{
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .priceHead{
+      padding: 16px;
+      border-bottom:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0));
+    }
+    .priceHead b{ display:block; font-size: 14px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);}
+    .priceHead strong{ display:block; font-size: 30px; margin-top: 6px; }
+    .priceBody{ padding: 16px; }
+    .priceBody ul{ margin: 0; padding-left: 16px; color: var(--muted); }
+    .priceBody li{ margin: 8px 0; }
+    .subtle{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .faq details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius2);
+      padding: 14px 14px;
+      margin-bottom: 10px;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight: 700;
+      color: var(--text);
+      list-style:none;
+    }
+    .faq summary::-webkit-details-marker{ display:none; }
+    .faq p{ margin: 10px 0 0; color: var(--muted); }
+
+    .form{
+      display:grid; gap:10px;
+    }
+    input, textarea, select{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.22);
+      color: var(--text);
+      outline:none;
+      font: inherit;
+    }
+    textarea{ min-height: 120px; resize: vertical; }
+    label{ font-size: 12px; color: var(--muted); }
+    .row2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px;}
+    @media (max-width: 650px){
+      .row2{ grid-template-columns: 1fr; }
+    }
+    .footer{
+      padding: 26px 0 50px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .footer a{ color: var(--muted); }
+    .notice{
+      border-left: 3px solid rgba(255,213,74,.55);
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,213,74,.06);
+      border:1px solid rgba(255,213,74,.18);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Floating WhatsApp */
+    .float{
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 99;
+    }
+    .float a{
+      display:inline-flex; align-items:center; gap:10px;
+      border-radius: 999px;
+      padding: 12px 14px;
+      background: linear-gradient(180deg, rgba(110,231,183,.95), rgba(110,231,183,.65));
+      color:#0b0f14;
+      text-decoration:none;
+      font-weight: 800;
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      border: 1px solid rgba(110,231,183,.4);
+    }
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11px;
+      padding: 3px 6px;
+      border-radius: 8px;
+      border:1px solid rgba(0,0,0,.18);
+      background: rgba(0,0,0,.10);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CONFIG: edit these -->
+  <script>
+    window.SITE = {
+      coachName: "Maximilliano",              // optional
+      city: "Folkestone",
+      park: "Radnor Park",
+      businessName: "First Touch Youth Fitness",
+      whatsappNumberE164: "+447542649561",    // <-- CHANGE (include +44)
+      email: "firsttouchyouthfitness@outlook.com",              // <-- CHANGE
+      instagramHandle: "@firsttouchyouthfitness", // optional
+      groupPrice: "£5 per child",
+      oneToOnePrice: "£20 per hour",
+      siblingDiscountText: "Sibling discounts available",
+      agesText: "Ages 9–16 (groups can be split by age/ability)",
+      sessionTimesText: "Weekly group sessions + 1-to-1 by arrangement",
+      tagline: "From First Touch to Grassroots — built strong, built smart.",
+      safetyBadges: ["Parent-first approach", "Clear boundaries", "Progress tracking", "Confidence building"],
+      // If you later use a form service (Formspree, Netlify Forms), replace the contactFormAction:
+      contactFormAction: "" // leave blank to use mailto fallback
+    };
+  </script>
+
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1 id="brandName">First Touch Youth Fitness</h1>
+          <p id="brandLine">Kids football strength, speed & agility — Folkestone</p>
+        </div>
+      </a>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#programs">Programs</a>
+        <a href="#method">Method</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#safeguarding">Safeguarding</a>
+        <a href="#contact">Contact</a>
+
+        <div class="cta">
+          <a class="btn" id="btnCall" href="#contact">Enquire</a>
+          <a class="btn primary" id="btnWhatsTop" href="#">Book on WhatsApp</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroGrid">
+        <div class="card">
+          <div class="pad">
+            <span class="pill">Grassroots football fitness • Strength • Agility • Speed • Confidence</span>
+            <h2>
+              Build <span>stronger</span> kids who play <span>smarter</span> football.
+            </h2>
+            <p id="heroText">
+              Training that makes sense for real grassroots players — faster feet, safer bodies, better balance,
+              and a calm mindset under pressure. This is football fitness with standards: warm-ups that protect,
+              drills that transfer to matches, and simple “mental mechanics” so kids stay composed and coachable.
+            </p>
+
+            <div class="heroActions">
+              <a class="btn primary" id="btnWhatsHero" href="#">Book a session (WhatsApp)</a>
+              <a class="btn" href="#pricing">See pricing</a>
+              <a class="btn" href="#method">How it works</a>
+            </div>
+
+            <div class="stats" aria-label="Highlights">
+              <div class="stat">
+                <b>Speed + Agility</b>
+                <span>Explosive first steps • quick turns • fast release</span>
+              </div>
+              <div class="stat">
+                <b>Strength + Control</b>
+                <span>Core • hips • balance • safer movement patterns</span>
+              </div>
+              <div class="stat">
+                <b>Match Transfer</b>
+                <span>Decision speed • scanning habits • reaction games</span>
+              </div>
+              <div class="stat">
+                <b>Confidence</b>
+                <span>Accountability, focus, and “reset” routines</span>
+              </div>
+            </div>
+
+            <p class="subtle">
+              <b>Location:</b> <span id="locText">Folkestone (Radnor Park)</span> •
+              <b>Audience:</b> <span id="agesText">Ages 9–16</span>
+            </p>
+          </div>
+        </div>
+
+        <aside class="card rightCard">
+          <div class="rightTop">
+            <h3>What parents normally want (and what we deliver)</h3>
+            <p>Safe sessions, clear progress, and kids who love turning up.</p>
+          </div>
+          <div class="rightBody">
+            <ul class="list">
+              <li class="li">
+                <div class="dot"></div>
+                <div>
+                  <b>Safety first, performance second</b>
+                  <span>Warm-up + movement prep built in every session.</span>
+                </div>
+              </li>
+              <li class="li">
+                <div class="dot" style="background: var(--ok); box-shadow: 0 0 0 4px rgba(110,231,183,.12);"></div>
+                <div>
+                  <b>Structured, not random drills</b>
+                  <span>Every block has a goal: speed, agility, strength, or football transfer.</span>
+                </div>
+              </li>
+              <li class="li">
+                <div class="dot" style="background: var(--danger); box-shadow: 0 0 0 4px rgba(255,90,122,.12);"></div>
+                <div>
+                  <b>Mindset: “keep the lesson, drop the noise”</b>
+                  <span>Mental mechanics for composure, consistency, and accountability.</span>
+                </div>
+              </li>
+              <li class="li">
+                <div class="dot"></div>
+                <div>
+                  <b>Communication that kids understand</b>
+                  <span>Analogies + clear cues. Less shouting. More learning.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="tagRow" aria-label="Session style tags">
+              <span class="tag">Small groups</span>
+              <span class="tag">Game-speed drills</span>
+              <span class="tag">Progress tracking</span>
+              <span class="tag">Parent-friendly</span>
+            </div>
+
+            <div style="margin-top:14px" class="notice">
+              <b>Quick note:</b> We keep online forms parent/guardian-focused and minimise child data.
+              (If you later add payments or memberships, we’ll tighten the privacy/policy side properly.)
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section">
+      <h3>Programs</h3>
+      <p class="lead">
+        Pick what fits your child right now — group sessions for energy and competitiveness, or 1-to-1 for targeted improvements.
+      </p>
+
+      <div class="twoCol">
+        <div class="feature">
+          <h4>Group Football Fitness</h4>
+          <p>
+            Fast feet, sharp turns, strong core, and football-reactive drills. We keep it fun but disciplined:
+            kids leave tired, proud, and better than when they arrived.
+          </p>
+          <div class="tagRow">
+            <span class="tag">Acceleration</span>
+            <span class="tag">Agility</span>
+            <span class="tag">Balance</span>
+            <span class="tag">Coordination</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <h4>1-to-1 Performance Coaching</h4>
+          <p>
+            Personal plan for weaknesses: speed mechanics, strength basics, confidence routines, and match-transfer drills.
+            Ideal for kids who want that next step.
+          </p>
+          <div class="tagRow">
+            <span class="tag">Personal plan</span>
+            <span class="tag">Video cues (optional)</span>
+            <span class="tag">Confidence</span>
+            <span class="tag">Accountability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="pad">
+          <h4 style="margin:0 0 8px">What a typical session looks like</h4>
+          <div class="twoCol">
+            <div class="feature">
+              <h4>1) Protect the body</h4>
+              <p>Warm-up, mobility, movement prep, safe landing / turning mechanics.</p>
+            </div>
+            <div class="feature">
+              <h4>2) Build athletic tools</h4>
+              <p>Speed starts, agility patterns, balance control, core + lower-body strength basics.</p>
+            </div>
+            <div class="feature">
+              <h4>3) Transfer to football</h4>
+              <p>Reaction games, scanning habits, quick release, change-of-direction under pressure.</p>
+            </div>
+            <div class="feature">
+              <h4>4) Mental mechanics (simple)</h4>
+              <p>Reset routines, “lesson vs noise”, and accountability cues kids can actually use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method" class="section">
+      <h3>The Method: Physical + Mental</h3>
+      <p class="lead">
+        Your child doesn’t just need fitness — they need <b>control</b>. Control of body position, breathing, decisions, and emotions.
+        We teach it in a way kids understand.
+      </p>
+
+      <div class="twoCol">
+        <div class="feature">
+          <h4>Physical pillars</h4>
+          <p>
+            Strength foundations (core/hips/legs), agility & deceleration, balance, coordination, and speed mechanics.
+            Built for football — not bodybuilding.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Mental mechanics (no cringe)</h4>
+          <p>
+            The aim is simple: keep the lesson, drop the noise. We practise “reset” tools so kids don’t spiral after mistakes —
+            they stay coachable and consistent.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="pad">
+          <h4 style="margin:0 0 8px">Progress without pressure</h4>
+          <p style="margin:0; color:var(--muted)">
+            We track progress with simple markers (not labels): movement quality, effort, consistency, and confidence under pressure.
+            Kids improve best when they feel safe enough to try hard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h3>Pricing</h3>
+      <p class="lead">Clear prices. No weird packages unless you ask for them.</p>
+
+      <div class="pricing">
+        <div class="priceCard">
+          <div class="priceHead">
+            <b>Group Session</b>
+            <strong id="priceGroup">£5 per child</strong>
+          </div>
+          <div class="priceBody">
+            <ul>
+              <li>1 hour coached session</li>
+              <li>Speed + agility + strength foundations</li>
+              <li>Football-transfer reaction games</li>
+              <li>Coaching cues kids understand</li>
+            </ul>
+            <div class="subtle" id="siblingDiscount">Sibling discounts available</div>
+          </div>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceHead">
+            <b>1-to-1 Coaching</b>
+            <strong id="price1to1">£20 per hour</strong>
+          </div>
+          <div class="priceBody">
+            <ul>
+              <li>Targeted plan for weaknesses</li>
+              <li>Technique + athletic mechanics</li>
+              <li>Confidence + accountability routines</li>
+              <li>Parent feedback summary (optional)</li>
+            </ul>
+            <div class="subtle">Great for kids who want “the next step”.</div>
+          </div>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceHead">
+            <b>Schools / Clubs</b>
+            <strong>Enquire</strong>
+          </div>
+          <div class="priceBody">
+            <ul>
+              <li>Small group blocks</li>
+              <li>Pre-season conditioning</li>
+              <li>Speed & agility workshops</li>
+              <li>Mental mechanics mini-session</li>
+            </ul>
+            <div class="subtle">Tell me your squad size + goals.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="pad">
+          <h4 style="margin:0 0 8px">Timetable</h4>
+          <p style="margin:0; color:var(--muted)" id="timesText">
+            Weekly group sessions + 1-to-1 by arrangement.
+          </p>
+          <p class="subtle" style="margin-top:10px">
+            Want me to lock this to your real Monday/Wednesday slots? Change <span class="kbd">sessionTimesText</span> in the config.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFEGUARDING -->
+    <section id="safeguarding" class="section">
+      <h3>Safeguarding & Standards</h3>
+      <p class="lead">
+        When you’re working with children, trust matters. Parents should know exactly what to expect.
+      </p>
+
+      <div class="twoCol">
+        <div class="feature">
+          <h4>Parent-first communication</h4>
+          <p>
+            All booking and contact is with parents/guardians. No private 1-to-1 messaging with children.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Clear boundaries</h4>
+          <p>
+            Sessions are public/open environments. Behaviour standards apply to everyone: respect, effort, safety.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>DBS / checks pathway</h4>
+          <p>
+            If you’re affiliated through clubs/roles with under-18s, The FA routes DBS checks via club welfare / county FA processes. (We can align your setup to this properly.) 
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Data minimisation</h4>
+          <p>
+            We only collect what we need to run a session. Parents control information and consent. Children’s data needs extra protection under UK GDPR.
+          </p>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:14px">
+        <b>Note:</b> If you later take online payments / memberships, you should add a full Privacy Policy + Cookie Policy and choose a proper lawful basis for any data you collect. 2
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h3>FAQ</h3>
+      <div class="faq">
+        <details>
+          <summary>What should my child bring?</summary>
+          <p>Trainers/boots as appropriate, water, warm layers, and a good attitude. We’ll handle the structure.</p>
+        </details>
+        <details>
+          <summary>Is this safe for kids?</summary>
+          <p>Sessions include warm-up and movement prep every time. We scale drills by age/ability and prioritise technique before intensity.</p>
+        </details>
+        <details>
+          <summary>My child is low confidence — will they cope?</summary>
+          <p>Yes. We use simple cues, praise effort, and give “reset” routines so mistakes don’t become meltdowns. Confidence grows through small wins.</p>
+        </details>
+        <details>
+          <summary>Do you do match coaching?</summary>
+          <p>This is football fitness and performance coaching. If you want team coaching add-ons (warmups, speed blocks, mini-workshops), enquire.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h3>Contact / Enquiries</h3>
+      <p class="lead">
+        Fastest way: WhatsApp. Or use the form and I’ll reply.
+      </p>
+
+      <div class="twoCol">
+        <div class="card">
+          <div class="pad">
+            <h4 style="margin:0 0 10px">Book on WhatsApp</h4>
+            <p style="margin:0 0 14px; color:var(--muted)">
+              Tell me: child’s age, football level, what you want to improve (speed/agility/strength/confidence), and preferred days.
+            </p>
+            <a class="btn primary" id="btnWhatsContact" href="#">Message on WhatsApp</a>
+            <p class="subtle">
+              Location: <span id="contactLoc">Folkestone (Radnor Park)</span>
+              <br/>Instagram: <span id="igText">@firsttouchyouthfitness</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="pad">
+            <h4 style="margin:0 0 10px">Enquiry form</h4>
+
+            <!-- If SITE.contactFormAction is blank, JS will fallback to mailto -->
+            <form class="form" id="contactForm" method="POST">
+              <div class="row2">
+                <div>
+                  <label for="parentName">Parent/Guardian name</label>
+                  <input id="parentName" name="parentName" autocomplete="name" required />
+                </div>
+                <div>
+                  <label for="phone">Phone (parent/guardian)</label>
+                  <input id="phone" name="phone" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div class="row2">
+                <div>
+                  <label for="childAge">Child age (optional)</label>
+                  <input id="childAge" name="childAge" inputmode="numeric" placeholder="e.g., 10" />
+                </div>
+                <div>
+                  <label for="goal">Main goal</label>
+                  <select id="goal" name="goal" required>
+                    <option value="">Select…</option>
+                    <option>Speed / acceleration</option>
+                    <option>Agility / turning</option>
+                    <option>Strength / balance</option>
+                    <option>Confidence / mindset</option>
+                    <option>General football fitness</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me what you're aiming for, and your preferred days/times." required></textarea>
+              </div>
+
+              <div class="notice">
+                We minimise child data online. Please avoid sharing medical details here — we’ll handle that safely in person/on a consent form if needed.
+              </div>
+
+              <button class="btn primary" type="submit">Send enquiry</button>
+              <div class="subtle">By sending, you confirm you’re the parent/guardian making this enquiry.</div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
+        <div>
+          <b id="footName">First Touch Youth Fitness</b> • <span id="footCity">Folkestone</span>
+          <div style="margin-top:6px;">© <span id="year"></span> • Built for grassroots families.</div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="#safeguarding">Safeguarding</a>
+          <a href="#contact">Contact</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <div class="float" aria-label="Quick WhatsApp booking">
+    <a id="btnWhatsFloat" href="#">
+      <span>Book</span>
+      <span class="kbd">WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    (function(){
+      const S = window.SITE || {};
+      const $ = (id) => document.getElementById(id);
+
+      // Brand text
+      $("brandName").textContent = S.businessName || "First Touch Youth Fitness";
+      $("footName").textContent  = S.businessName || "First Touch Youth Fitness";
+      $("brandLine").textContent = `Kids football strength, speed & agility — ${S.city || "Folkestone"}`;
+      $("locText").textContent   = `${S.city || "Folkestone"} (${S.park || "Radnor Park"})`;
+      $("contactLoc").textContent= `${S.city || "Folkestone"} (${S.park || "Radnor Park"})`;
+      $("footCity").textContent  = S.city || "Folkestone";
+
+      // Pricing
+      $("priceGroup").textContent = S.groupPrice || "£5 per child";
+      $("price1to1").textContent  = S.oneToOnePrice || "£20 per hour";
+      $("siblingDiscount").textContent = S.siblingDiscountText || "Sibling discounts available";
+      $("agesText").textContent   = S.agesText || "Ages 9–16";
+      $("timesText").textContent  = S.sessionTimesText || "Weekly group sessions + 1-to-1 by arrangement";
+      $("igText").textContent     = S.instagramHandle || "@firsttouchyouthfitness";
+      $("year").textContent       = new Date().getFullYear();
+
+      // WhatsApp links
+      const wa = (S.whatsappNumberE164 || "").replace(/\s/g,"");
+      const waOk = /^\+\d{8,15}$/.test(wa);
+      const msg = encodeURIComponent(
+        `Hi ${S.businessName || "First Touch Youth Fitness"} — I'd like to book.\n\n` +
+        `Parent/Guardian name:\nChild age:\nGoal (speed/agility/strength/confidence):\nPreferred day/time:\n`
+      );
+      const waLink = waOk
+        ? `https://wa.me/${wa.replace("+","")}?text=${msg}`
+        : `#contact`;
+
+      ["btnWhatsTop","btnWhatsHero","btnWhatsContact","btnWhatsFloat"].forEach(id=>{
+        const el = $(id);
+        if(!el) return;
+        el.href = waLink;
+        if(!waOk){
+          el.title = "Set your WhatsApp number in the SITE config to enable one-tap booking.";
+        }
+      });
+
+      // Enquiry form action
+      const form = $("contactForm");
+      const action = (S.contactFormAction || "").trim();
+      if(action){
+        form.action = action;
+      } else {
+        // mailto fallback
+        form.addEventListener("submit", function(e){
+          e.preventDefault();
+          const email = (S.email || "").trim();
+          if(!email){
+            alert("Set your email in the SITE config (SITE.email) to use the form.");
+            return;
+          }
+          const parentName = $("parentName").value.trim();
+          const phone = $("phone").value.trim();
+          const childAge = $("childAge").value.trim();
+          const goal = $("goal").value;
+          const message = $("message").value.trim();
+
+          const subject = encodeURIComponent(`[Enquiry] ${S.businessName || "First Touch Youth Fitness"} — ${parentName}`);
+          const body = encodeURIComponent(
+            `Parent/Guardian: ${parentName}\n` +
+            `Phone: ${phone}\n` +
+            `Child age (optional): ${childAge}\n` +
+            `Goal: ${goal}\n\n` +
+            `${message}\n\n` +
+            `Sent from: website enquiry form`
+          );
+          window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
